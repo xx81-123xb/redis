@@ -1,12 +1,12 @@
 package com.dupenghao;
 
-//import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RedisApplicationTests {
+class SpringdataRedisDemoApplicationTests {
 
-//	@Test
+	@Test
 	void contextLoads() {
 	}
 
