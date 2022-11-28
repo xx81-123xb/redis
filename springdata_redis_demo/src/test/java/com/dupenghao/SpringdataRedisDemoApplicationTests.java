@@ -8,6 +8,7 @@ class SpringdataRedisDemoApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.println("---");
 	}
 
 }
