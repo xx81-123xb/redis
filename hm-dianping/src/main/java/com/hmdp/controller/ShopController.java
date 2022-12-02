@@ -33,7 +33,7 @@ public class ShopController {
      */
     @GetMapping("/{id}")
     public Result queryShopById(@PathVariable("id") Long id) {
-        return Result.ok(shopService.getById(id));
+        return Result.ok(shopService.queryShopById(id));
     }
 
     /**
@@ -77,7 +77,8 @@ public class ShopController {
                 .eq("type_id", typeId)
                 .page(new Page<>(current, SystemConstants.DEFAULT_PAGE_SIZE));
         // 返回数据
-        return Result.ok(page.getRecords());
+        page.getRecords();
+        return Result.ok(shopService.queryShopByType(typeId,current));
     }
 
     /**
